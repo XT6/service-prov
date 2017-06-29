@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: Test hosts
+      ping:
+      remote_user: carlos

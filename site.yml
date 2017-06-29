@@ -1,0 +1,14 @@
+---
+- name: Check connectivity
+  hosts: all 
+  remote_user: carlos
+  roles:
+    - ping
+
+- name: Update users
+  hosts: cacti
+  remote_user: carlos
+  become: yes
+  roles: 
+    - user-maint
+
