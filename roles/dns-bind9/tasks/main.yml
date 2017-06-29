@@ -2,3 +2,11 @@
 - name: Test hosts for bind9
   ping:
   remote_user: carlos
+
+- name: Upload config files to master DNS server(s)
+  ping:
+  remote_user: carlos
+
+- name: Upload config files to slave DNS server(s)
+  ping:
+  remote_user: carlos
