@@ -1,0 +1,16 @@
+[dns-bind9]
+coati.xt6.us	ansible_ssh_user=carlos
+nutria.xt6.us	ansible_ssh_user=carlos
+
+[cacti]
+coati.xt6.us	ansible_ssh_user=carlos
+
+[gitlab]
+nutria.xt6.us	ansible_ssh_user=carlos
+
+[user-maint]
+coati.xt6.us	ansible_ssh_user=carlos
+nutria.xt6.us	ansible_ssh_user=carlos
+ham01.xt6.us	ansible_ssh_user=carlos
+dfw01.xt6.us	ansible_ssh_user=carlos
+jfk01.xt6.us	ansible_ssh_user=carlos
