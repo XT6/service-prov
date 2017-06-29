@@ -1,0 +1,47 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+logging{
+  channel simple_log {
+    file "/var/log/named/bind.log" versions 3 size 10m;
+    severity dynamic;
+    print-time yes;
+    print-severity yes;
+    print-category yes;
+  };
+ 
+  channel queries_log {
+    file "/var/log/named/queries.log" versions 3 size 10m;
+    severity dynamic;
+    print-time yes;
+    print-severity yes;
+    print-category yes;
+  };
+  category default{
+    simple_log;
+  };
+  category queries{
+    queries_log;
+  };
+ 
+};
+
+zone "xy" {
+	type master;
+	file "/etc/bind/db.xy";
+};
+
+zone "88.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.xy.rev4";
+};
+
+zone "0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa" {
+	type master;
+	file "/etc/bind/db.xy.rev6";
+};

@@ -1,4 +1,11 @@
 ---
+- name: Create groups
+  group:
+     name: '{{ item }}'
+     state: present
+  with_items:
+    - docker
+
 - name: Create users
   user: 
     name: carlos
@@ -15,4 +22,4 @@
   with_file:
     - keys/carlosm-lacnic2.pub
     - keys/carlosm-lacnic-rsa.pub
-    
+    - keys/carlosm-lacnic-ed25519.pub

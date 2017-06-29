@@ -1,0 +1,17 @@
+;
+;
+$TTL	300
+@	IN	SOA	nutria.xy. root.nutria.xy. (
+			      4		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	nutria.xy.
+@	IN	NS	coati.xy.
+1	IN	PTR	walter.xy.
+116	IN	PTR	nutria.xy.
+190	IN	PTR	coati.xy.
+131	IN	PTR	puma.xy.
+129	IN	PTR	wdmycloud.xy.

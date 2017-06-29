@@ -1,0 +1,18 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	10
+@	IN	SOA	nutria.xy. root.nutria.xy. (
+			      2		; Serial
+			    600		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			   600 )	; Negative Cache TTL
+;
+@	IN	NS	nutria.xy.
+
+;
+nutria.xy.	IN	A	10.71.10.116
+coati.xy.	IN	A	10.71.10.190
+puma.xy.	IN	A	10.71.10.131
+oveja.xy.	IN	A	10.71.10.109

@@ -1,0 +1,23 @@
+;
+;
+$TTL	300
+$ORIGIN 88.168.192.in-addr.arpa.
+
+@	IN	SOA	nutria.xy. root.nutria.xy. (
+			2017061600	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	nutria.xy.
+@	IN	NS	coati.xy.
+
+;; ---- dnsrev.py ---- automatically generated, do not edit ---- dnsrev.py ----
+
+1.88.168.192.in-addr.arpa.                          IN PTR walter.4.xy.
+14.88.168.192.in-addr.arpa.                         IN PTR oveja.4.xy.
+19.88.168.192.in-addr.arpa.                         IN PTR nutria.xy.
+242.88.168.192.in-addr.arpa.                        IN PTR puma.xy.
+244.88.168.192.in-addr.arpa.                        IN PTR coati.xy.
+251.88.168.192.in-addr.arpa.                        IN PTR wdmycloud.xy.

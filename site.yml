@@ -1,14 +1,14 @@
 ---
-- name: Check connectivity
-  hosts: all 
-  remote_user: carlos
-  roles:
-    - ping
-
 - name: Update users
-  hosts: cacti
+  hosts: all
   remote_user: carlos
   become: yes
   roles: 
-    - user-maint
+    - usermaint
 
+- name: Update DNS configuration
+  hosts: dns-bind9
+  remote_user: carlos
+  become: yes
+  roles:
+    - dns-bind9

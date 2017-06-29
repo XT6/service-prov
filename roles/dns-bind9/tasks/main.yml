@@ -1,0 +1,4 @@
+---
+- name: Test hosts for bind9
+  ping:
+  remote_user: carlos
