@@ -3,7 +3,7 @@
   hosts: all
   remote_user: carlos
   become: yes
-  roles: 
+  roles:
     - usermaint
 
 - name: Update DNS configuration

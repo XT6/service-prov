@@ -2,4 +2,4 @@
 
 # ansible-playbook -i hosts site.yml --ask-sudo
 #ansible-playbook site.yml --tags "obs-admin,obs-hosts" --ask-sudo
-ansible-playbook site.yml  -k --ask-sudo
+ansible-playbook site.yml -k --ask-sudo  $1 $2 $3

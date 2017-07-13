@@ -5,9 +5,9 @@ options {
 	// to talk to, you may need to fix the firewall to allow multiple
 	// ports to talk.  See http://www.kb.cert.org/vuls/id/800113
 
-	// If your ISP provided one or more IP addresses for stable 
-	// nameservers, you probably want to use them as forwarders.  
-	// Uncomment the following block, and insert the addresses replacing 
+	// If your ISP provided one or more IP addresses for stable
+	// nameservers, you probably want to use them as forwarders.
+	// Uncomment the following block, and insert the addresses replacing
 	// the all-0's placeholder.
 
 	// forwarders {
@@ -35,5 +35,5 @@ acl "trusted-nets" {
 	::1;
 	fd94:9f85:9d08::/48;
 	2800:a0::/28;
+	167.56.0.0/13;
 };
-

@@ -3,10 +3,36 @@
   ping:
   remote_user: carlos
 
-- name: Upload config files to master DNS server(s)
-  ping:
-  remote_user: carlos
+- name: Ensure bind9 is installed and updated
+  apt:
+    update_cache: yes
+    name: bind9
+    state: present
 
-- name: Upload config files to slave DNS server(s)
-  ping:
-  remote_user: carlos
+- name: Create logging and support directories
+  file:
+    name: /var/log/named
+    state: directory
+    owner: bind
+    group: bind
+    mode: 0755
+
+- name: Upload config files to master DNS server(s)
+  copy:
+    src: "{{ item }}"
+    dest: /etc/bind/
+    owner: root
+    group: bind
+    mode: 0644
+  with_fileglob:
+    - etc/*
+
+- name: Restart bind9 process
+  service:
+    name: bind9
+    state: restarted
+
+
+#- name: Upload config files to slave DNS server(s)
+#  ping:
+#  remote_user: carlos
