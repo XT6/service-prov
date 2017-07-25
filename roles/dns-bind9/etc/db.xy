@@ -4,32 +4,33 @@
 ;
 $TTL	30
 @	IN	SOA	nutria.xy. root.nutria.xy. (
-		  2017063000 	; Serial
-			     600	; Refresh
-			     300	; Retry
-				6000	; Expire
-			 30 )		; Negative Cache TTL
+		2017071300 	 ; Serial
+		       600	 ; Refresh
+		       300	 ; Retry
+		      6000	 ; Expire
+		        30 ) ; Negative Cache TTL
 ;
 @	IN	NS	nutria.xy.
 @	IN	NS	coati.xy.
+@ 	IN	NS	dfw01.xt6.us.
 
 ;
-walter.xy.		IN	A		192.168.88.1
-walter.4.xy.	IN	A		192.168.88.1
-walter.xy.		IN	AAAA	fd94:9f85:9d08::1
+walter.xy.	IN	A	192.168.88.1
+walter.4.xy.	IN	A	192.168.88.1
+walter.xy.	IN	AAAA	fd94:9f85:9d08::1
 walter.6.xy.	IN	AAAA	fd94:9f85:9d08::1
 ;
-nutria.xy.		IN	A		192.168.88.19
-nutria.4.xy.    IN	A		192.168.88.19
-nutria.xy.		IN	AAAA	fd94:9f85:9d08::10
+nutria.xy.	IN	A	192.168.88.19
+nutria.4.xy.    IN	A	192.168.88.19
+nutria.xy.	IN	AAAA	fd94:9f85:9d08::10
 nutria.6.xy.	IN	AAAA	fd94:9f85:9d08::10
 ;
-coati.xy.		IN	A		192.168.88.244
-coati.xy.		IN	AAAA	fd94:9f85:9d08::20
+coati.xy.	IN	A	192.168.88.244
+coati.xy.	IN	AAAA	fd94:9f85:9d08::20
 ;
-oveja.xy.		IN	A		192.168.88.14
-oveja.4.xy.		IN	A		192.168.88.14
+oveja.xy.	IN	A	192.168.88.14
+oveja.4.xy.	IN	A	192.168.88.14
 ;
-puma.xy.		IN	A		192.168.88.242
-wdmycloud.xy.	IN	A		192.168.88.251
-samsungc460.xy.	IN	A		192.168.88.21
+puma.xy.	IN	A	192.168.88.242
+wdmycloud.xy.	IN	A	192.168.88.251
+samsungc460.xy.	IN	A	192.168.88.21
