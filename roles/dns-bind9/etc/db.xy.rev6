@@ -2,7 +2,7 @@
 ;
 $TTL	300
 @	IN	SOA	nutria.xy. root.nutria.xy. (
-			      2017061600		; Serial
+		     2017091300		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -13,6 +13,8 @@ $TTL	300
 
 ;; ---- dnsrev.py ---- automatically generated, do not edit ---- dnsrev.py ----
 
-0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR nutria.xy.
-0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR coati.xy.
+0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR nutria.6.xy.
+0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR coati-wifi.6.xy.
+e.b.f.6.6.a.e.f.f.f.c.5.d.8.2.4.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR coati.6.xy.
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR walter.6.xy.
+5.8.4.9.1.0.4.8.f.8.a.e.4.0.c.9.0.0.0.0.8.0.d.9.5.8.f.9.4.9.d.f.ip6.arpa.  IN PTR berry01.6.xy.

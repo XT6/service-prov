@@ -2,14 +2,17 @@
 - name: Test hosts for bind9
   ping:
   remote_user: carlos
+  tags: dns
 
 - name: Ensure bind9 is installed and updated
+  tags: dns
   apt:
     update_cache: yes
     name: bind9
     state: present
 
 - name: Create logging and support directories
+  tags: dns
   file:
     name: /var/log/named
     state: directory
@@ -18,6 +21,7 @@
     mode: 0755
 
 - name: Upload config files to master DNS server(s)
+  tags: dns, dnsupdate
   copy:
     src: "{{ item }}"
     dest: /etc/bind/
@@ -28,6 +32,7 @@
     - etc/*
 
 - name: Restart bind9 process
+  tags: dns, dnsupdate
   service:
     name: bind9
     state: restarted

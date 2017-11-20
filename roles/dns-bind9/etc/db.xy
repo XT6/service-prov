@@ -4,7 +4,7 @@
 ;
 $TTL	30
 @	IN	SOA	nutria.xy. root.nutria.xy. (
-		2017071300 	 ; Serial
+		2017091403 	 ; Serial
 		       600	 ; Refresh
 		       300	 ; Retry
 		      6000	 ; Expire
@@ -25,8 +25,10 @@ nutria.4.xy.    IN	A	192.168.88.19
 nutria.xy.	IN	AAAA	fd94:9f85:9d08::10
 nutria.6.xy.	IN	AAAA	fd94:9f85:9d08::10
 ;
-coati.xy.	IN	A	192.168.88.244
-coati.xy.	IN	AAAA	fd94:9f85:9d08::20
+coati.xy.	IN	A	192.168.88.17
+coati.xy.	IN	AAAA	fd94:9f85:9d08:0:428d:5cff:fea6:6fbe
+coati-wifi.xy.	IN	A	192.168.88.244
+coati-wifi.xy.	IN	AAAA	fd94:9f85:9d08::20
 ;
 oveja.xy.	IN	A	192.168.88.14
 oveja.4.xy.	IN	A	192.168.88.14
@@ -34,3 +36,7 @@ oveja.4.xy.	IN	A	192.168.88.14
 puma.xy.	IN	A	192.168.88.242
 wdmycloud.xy.	IN	A	192.168.88.251
 samsungc460.xy.	IN	A	192.168.88.21
+;
+berry01.xy.	IN	A	192.168.88.249
+berry01.xy.	IN	AAAA	fd94:9f85:9d08:0:9c04:ea8f:8401:9485
+;
