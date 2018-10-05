@@ -1,0 +1,42 @@
+;
+; BIND data file for local xy inernal zone interface
+; Author: carlos@xt6.us
+;
+$TTL	30
+@	IN	SOA	nutria.in.xt6.us. root.nutria.int.xt6.us. (
+		2018100500 	 ; Serial
+		       600	 ; Refresh
+		       300	 ; Retry
+		      6000	 ; Expire
+		        30 ) ; Negative Cache TTL
+;
+@	IN	NS	nutria.in.xt6.us.
+@	IN	NS	coati.in.xt6.us.
+@ 	IN	NS	dfw01.xt6.us.
+
+;
+walter.in.xt6.us.	IN	A	192.168.88.1
+walter.4.in.xt6.us.	IN	A	192.168.88.1
+walter.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::1
+walter.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::1
+;
+nutria.in.xt6.us.	IN	A	192.168.88.19
+nutria.4.in.xt6.us.    IN	A	192.168.88.19
+nutria.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::10
+nutria.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::10
+;
+coati.in.xt6.us.	IN	A	192.168.88.17
+coati.in.xt6.us.	IN	AAAA	fd94:9f85:9d08:0:428d:5cff:fea6:6fbe
+coati-wifi.in.xt6.us.	IN	A	192.168.88.244
+coati-wifi.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::20
+;
+oveja.in.xt6.us.	IN	A	192.168.88.14
+oveja.4.in.xt6.us.	IN	A	192.168.88.14
+;
+puma.in.xt6.us.	IN	A	192.168.88.242
+wdmycloud.in.xt6.us.	IN	A	192.168.88.251
+samsungc460.in.xt6.us.	IN	A	192.168.88.21
+;
+berry01.in.xt6.us.	IN	A	192.168.88.249
+berry01.in.xt6.us.	IN	AAAA	fd94:9f85:9d08:0:9c04:ea8f:8401:9485
+;

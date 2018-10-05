@@ -4,7 +4,7 @@ $TTL	300
 $ORIGIN 88.168.192.in-addr.arpa.
 
 @	IN	SOA	nutria.xy. root.nutria.xy. (
-			2017091300	; Serial
+		     2018060600		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire

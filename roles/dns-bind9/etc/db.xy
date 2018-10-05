@@ -4,7 +4,7 @@
 ;
 $TTL	30
 @	IN	SOA	nutria.xy. root.nutria.xy. (
-		2017091403 	 ; Serial
+		2018060600 	 ; Serial
 		       600	 ; Refresh
 		       300	 ; Retry
 		      6000	 ; Expire

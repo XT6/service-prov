@@ -22,11 +22,25 @@ logging{
     print-severity yes;
     print-category yes;
   };
+
+  channel dnssec_log {
+    file "/var/log/named/dnssec.log" versions 3 size 10m;
+    severity dynamic;
+    print-time yes;
+    print-severity yes;
+    print-category yes;
+  };
+
   category default{
     simple_log;
   };
+
   category queries{
     queries_log;
+  };
+
+  category dnssec {
+	dnssec_log;
   };
  
 };
@@ -34,6 +48,11 @@ logging{
 zone "xy" {
 	type master;
 	file "/etc/bind/db.xy";
+};
+
+zone "in.xt6.us" {
+  type master;
+  file "/etc/bind/db.in.xt6.us";
 };
 
 zone "88.168.192.in-addr.arpa" {

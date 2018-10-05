@@ -27,6 +27,9 @@ options {
 	allow-query { trusted-nets; };
 	allow-query-cache { trusted-nets; };
 	allow-recursion { trusted-nets; };
+
+	dnssec-enable yes;
+	dnssec-validation auto;
 };
 
 acl "trusted-nets" {
