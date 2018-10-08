@@ -3,8 +3,8 @@
 ; Author: carlos@xt6.us
 ;
 $TTL	30
-@	IN	SOA	nutria.in.xt6.us. root.nutria.int.xt6.us. (
-		2018100500 	 ; Serial
+@	IN	SOA	nutria.in.xt6.us. root.nutria.in.xt6.us. (
+		2018100800 	 ; Serial
 		       600	 ; Refresh
 		       300	 ; Retry
 		      6000	 ; Expire
@@ -21,7 +21,7 @@ walter.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::1
 walter.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::1
 ;
 nutria.in.xt6.us.	IN	A	192.168.88.19
-nutria.4.in.xt6.us.    IN	A	192.168.88.19
+nutria.4.in.xt6.us.	IN	A	192.168.88.19
 nutria.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::10
 nutria.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::10
 ;
@@ -33,10 +33,17 @@ coati-wifi.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::20
 oveja.in.xt6.us.	IN	A	192.168.88.14
 oveja.4.in.xt6.us.	IN	A	192.168.88.14
 ;
-puma.in.xt6.us.	IN	A	192.168.88.242
+;puma.in.xt6.us.		IN	A	192.168.88.242	
+puma.in.xt6.us.		IN	A	192.168.88.50
 wdmycloud.in.xt6.us.	IN	A	192.168.88.251
 samsungc460.in.xt6.us.	IN	A	192.168.88.21
 ;
 berry01.in.xt6.us.	IN	A	192.168.88.249
 berry01.in.xt6.us.	IN	AAAA	fd94:9f85:9d08:0:9c04:ea8f:8401:9485
 ;
+
+; Servidores virtualizados dentro del proxmox de PUMA
+;
+
+cocoliso.in.xt6.us.	IN	A	192.168.88.111
+alonso.in.xt6.us.	IN	A	192.168.88.51
