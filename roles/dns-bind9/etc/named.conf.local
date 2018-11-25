@@ -45,10 +45,10 @@ logging{
  
 };
 
-zone "xy" {
-	type master;
-	file "/etc/bind/db.xy";
-};
+// zone "xy" {
+// 	type master;
+// 	file "/etc/bind/db.xy";
+// };
 
 zone "in.xt6.us" {
   type master;

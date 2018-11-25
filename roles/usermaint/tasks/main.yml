@@ -1,12 +1,16 @@
 ---
 - name: Create groups
+  tags: usermaint
   group:
      name: '{{ item }}'
      state: present
   with_items:
     - docker
+    - carlos
+    - sudo
 
 - name: Create users
+  tags: usermaint
   user: 
     name: carlos
     comment: "Usuario de Carlos Marcelo"
@@ -15,6 +19,7 @@
     groups: sudo,adm,docker
 
 - name: Update SSH keys for users
+  tags: usermaint
   authorized_key:
     user: carlos
     state: present

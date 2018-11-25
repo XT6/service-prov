@@ -1,21 +1,25 @@
 [dns-bind9]
 coati.in.xt6.us		ansible_ssh_user=carlos
-nutria.in.xt6.us	ansible_ssh_user=carlos
+ns1.in.xt6.us		ansible_ssh_user=carlos
 dfw01.xt6.us	 	ansible_ssh_user=carlos
 
 [cacti]
 coati.in.xt6.us		ansible_ssh_user=carlos
 
-[gitlab]
-nutria.in.xt6.us	ansible_ssh_user=carlos
-
 [user-maint]
 coati.in.xt6.us		ansible_ssh_user=carlos
-nutria.in.xt6.us	ansible_ssh_user=carlos
+nutria.in.xt6.us	ansible_ssh_user=root
+puma.in.xt6.us		ansible_ssh_user=root
 ham01.xt6.us		ansible_ssh_user=carlos
 dfw01.xt6.us		ansible_ssh_user=carlos
 jfk01.xt6.us		ansible_ssh_user=carlos
 berry01.in.xt6.us	ansible_ssh_user=carlos
+cocoliso.in.xt6.us	ansible_ssh_user=root
+gitlab.in.xt6.us	ansible_ssh_user=root
+alonso.in.xt6.us	ansible_ssh_user=carlos
 
 [test-host]
 coati.in.xt6.us		ansible_ssh_user=carlos
+
+[jenkins]
+alonso.in.xt6.us	ansible_ssh_user=carlos
