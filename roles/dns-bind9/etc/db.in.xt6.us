@@ -4,7 +4,7 @@
 ;
 $TTL	30
 @	IN	SOA	nutria.in.xt6.us. root.nutria.in.xt6.us. (
-		2018112501 	 ; Serial
+		2019010701 	 ; Serial
 		       600	 ; Refresh
 		       300	 ; Retry
 		      6000	 ; Expire
@@ -51,11 +51,17 @@ berry01.in.xt6.us.	IN	AAAA	fd94:9f85:9d08:0:9c04:ea8f:8401:9485
 
 ; Servicios contenerizados
 ;
-gitlab.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::ff:10
+gitlab.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::ff:40
 gitlab.in.xt6.us.	IN	A	192.168.88.40
+;
+trac.in.xt6.us.		IN	AAAA	fd94:9f85:9d08::ff:41
+trac.in.xt6.us.		IN	A	192.168.88.41
 
 ; Servidores virtualizados dentro del proxmox de PUMA
 ;
 
 cocoliso.in.xt6.us.	IN	A	192.168.88.111
 alonso.in.xt6.us.	IN	A	192.168.88.51
+
+; ACME CHALLENGES for CERTBOT
+_acme-challenge.puma	IN	TXT	"d0IUchUI2EGsD_BsCCKygmU-uwZu2jmh3xoCHmATvTw"

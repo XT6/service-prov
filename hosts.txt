@@ -16,6 +16,7 @@ jfk01.xt6.us		ansible_ssh_user=carlos
 berry01.in.xt6.us	ansible_ssh_user=carlos
 cocoliso.in.xt6.us	ansible_ssh_user=root
 gitlab.in.xt6.us	ansible_ssh_user=root
+trac.in.xt6.us		ansible_ssh_user=root
 alonso.in.xt6.us	ansible_ssh_user=carlos
 
 [test-host]
