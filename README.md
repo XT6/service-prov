@@ -7,3 +7,9 @@ Service provisioning recipes in Ansible
 ```
 ./mk --tags dns
 ```
+
+## Update packages
+
+```
+./mk --tags pkgupdate
+```
