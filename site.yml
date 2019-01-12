@@ -8,6 +8,8 @@
 
 - name: Update DNS configuration
   hosts: dns-bind9
+  include_vars:
+    - file:  "vars/ssh_keys.yml"
   remote_user: carlos
   become: yes
   roles:
