@@ -1,0 +1,5 @@
+[dns-bind9]
+coati.in.xt6.us		
+ns1.in.xt6.us		
+dfw01.xt6.us	 	
+
