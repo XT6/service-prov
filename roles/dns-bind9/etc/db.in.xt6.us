@@ -26,6 +26,10 @@ ns1.4.in.xt6.us.	IN	A	192.168.88.19
 ns1.in.xt6.us.		IN	AAAA	fd94:9f85:9d08::19
 ns1.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::19
 ;
+ns2.in.xt6.us.		IN	A	192.168.88.17
+ns2.4.in.xt6.us.	IN	A	192.168.88.17
+ns2.in.xt6.us.		IN	AAAA	fd94:9f85:9d08::17
+ns2.6.in.xt6.us.	IN	AAAA	fd94:9f85:9d08::17
 ;
 nutria.in.xt6.us.	IN	A	192.168.88.191
 nutria.4.in.xt6.us.	IN	A	192.168.88.191
